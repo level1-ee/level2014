@@ -1,0 +1,25 @@
+.slide--cover {
+  position: relative;
+  height: 100vh;
+  cursor: pointer;
+
+  .cover-img {
+    background-image: url('../../img/cover.jpg');
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &:after {
+      content:'';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(ellipse at center, rgba($dark-blue, 0) 0%, darken($dark-blue, 7) 80%);
+    }
+  }
+
+}

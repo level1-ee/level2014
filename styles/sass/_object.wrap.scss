@@ -1,0 +1,31 @@
+.section-wrap {
+  // background-color: red;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.wrap--year-recap {
+  // padding: 100px 0;
+  max-width: 580px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @include mq(900) {
+    padding: 0;
+  }
+}
+
+.wrap--goty {
+  // padding: 100px 0;
+  max-width: 900px;
+  position: relative;
+  padding: 0 40px;
+
+  @include mq(900) {
+    padding: 0;
+  }
+
+}

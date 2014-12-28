@@ -1,0 +1,44 @@
+.toc-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($dark-blue, .9);
+  z-index: 100;
+  display: none;
+
+  ul {
+    list-style: none;
+    text-align: center;
+    font-size: rem-calc(20);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatey(-50%) translateX(-50%);
+    font-family: $ff-sans;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    li {
+      margin-bottom: 40px;
+    }
+
+    a {
+      color: $light-blue;
+      text-decoration: none;
+      border: 1px solid $light-blue;
+      padding: 10px 40px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: .5s;
+
+      &:hover {
+        background-color: $light-blue;
+        color: #fff;
+      }
+
+    }
+
+  }
+}

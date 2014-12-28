@@ -1,0 +1,116 @@
+.slide--thanks {
+
+  h1 {
+    text-align: center;
+    color: $light-blue;
+    margin-top: 150px;
+    font-size: rem-calc(40);
+
+    @include mq(650) {
+      font-size: rem-calc(60);
+    }
+
+    @include mq(900) {
+      font-size: rem-calc(100);
+    }
+  }
+
+  .subtitle {
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 0 auto 50px;
+    font-size: rem-calc(14);
+    font-weight: 900;
+    font-family: $ff-sans;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+
+    span {
+      position: relative;
+      z-index: 10;
+      background-color: $dark-blue;
+      padding: 0 20px;
+    }
+
+    &:before {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      content:'';
+      display: block;
+      border-bottom: 1px solid $red;
+    }
+
+  }
+
+  .sponsors {
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 30px;
+      margin-bottom: 15px;
+
+      a {
+        // background-color: #fff;
+        padding: 20px;
+        display: block;
+        transition: 1s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+      }
+
+    }
+
+    img {
+      // max-width: 100%;
+      display: block;
+      max-height: 60px;
+    }
+
+    img[src*='svg'] {
+      width: 100%;
+      max-width: 200px;
+    }
+
+    img.sponsors__gamefounders {
+      max-height: 40px;
+    }
+
+    img.sponsors__klotsipood {
+      max-height: 40px;
+    }
+
+    img.sponsors__laitse {
+      max-height: 90px;
+    }
+
+    img.sponsors__monster {
+      max-height: 90px;
+    }
+
+
+    img.sponsors__ps4 {
+      max-height: 40px;
+    }
+
+    img.sponsors__punktid {
+      max-height: 40px;
+    }
+
+
+    img.sponsors__super {
+      max-height: 90px;
+    }
+
+  }
+}

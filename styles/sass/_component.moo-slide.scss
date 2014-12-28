@@ -1,0 +1,120 @@
+.slide--moo {
+
+  .moo-logo {
+    display: block;
+    margin: 150px auto -30px;
+    z-index: 10;
+    position: relative;
+    padding: 0 40px;
+    width: 100%;
+
+    @include mq(600) {
+      padding: 0;
+      max-width: 350px;
+    }
+
+  }
+
+  .video {
+    margin: 0 auto;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #000;
+    max-width: 760px;
+  }
+
+  .moo-btn {
+    z-index: 15;
+    font-family: $ff-sans;
+    font-weight: 900;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem-calc(12);
+    border: 1px solid $light-blue;
+    background-color: rgba($light-blue, .7);
+    border-radius: 40px;
+    padding: 5px 20px;
+    transition: 2s;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+
+    &.current,
+    &:hover {
+      transition: .5s;
+      background-color: $light-blue;
+    }
+
+
+  }
+
+  .moo-threes-wrapper {
+    @include clearfix();
+    margin: 40px auto;
+    max-width: 940px;
+  }
+
+  .moo-kevad,
+  .moo-suvi,
+  .moo-sugis {
+    position: relative;
+    max-width: 300px;
+    text-align: center;
+    transition: 1s;
+    margin: 0 auto 40px;
+
+    @include mq(980) {
+      margin: 0 20px 0 0;
+      float: left;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      position: relative;
+      display: block;
+      border-radius: 3px;
+      border: 1px solid #000;
+
+    }
+
+    h2 {
+      color: $red;
+      z-index: 15;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translatex(-50%) ;
+      font-size: rem-calc(40px);
+      text-shadow: 0 3px 5px $dark-blue;
+    }
+
+  }
+
+  .moo-kevad {
+
+    // float: right;
+  }
+
+  .moo-suvi {
+
+    // float: left;
+  }
+
+  .moo-sugis {
+    margin: 0 auto;
+
+    @include mq(980) {
+      margin: 0;
+    }
+
+  }
+
+}

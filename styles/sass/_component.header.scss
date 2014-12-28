@@ -1,0 +1,166 @@
+.global-header {
+  border-top: 2px solid $red;
+  z-index: 1000;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // box-shadow: 0px 2px 0px 0px rgba(#000, .1);;
+  // overflow: hidden;
+}
+
+.logo {
+  display: block;
+  right: 10px;
+  width: 120px;
+  z-index: 100;
+  transform: scale(0.7);
+  top: 30px;
+  margin: 0 auto;
+
+  @include mq(500) {
+    position: absolute;
+  }
+
+  @include mq(900) {
+    transform: scale(1);
+    right: 50px;
+  }
+}
+
+.header-title {
+  margin-top: -5px;
+  position: relative;
+  text-align: center;
+  font-size: rem-calc(75px);
+  line-height: 1;
+  left: 10px;
+  color: white;
+  transform: translatey(0);
+  transition: 1s;
+  color: $red;
+  text-shadow: 1px 1px 5px $dark-blue;
+  top: -10px;
+  transform: scale(0.7);
+
+  @include mq(900) {
+    top: 4px;
+    transform: scale(1);
+  }
+
+
+  &:hover strong {
+    animation:glitch 3s steps(50) infinite;
+  }
+
+
+  &--cover {
+    color: #fff;
+    text-shadow: 0px 0px 10px black;
+    cursor: pointer;
+
+
+    transform: translatey(35vh) scale(0.7);
+
+    @include mq(590) {
+      transform: translatey(35vh) scale(1.4);
+    }
+
+    a {
+      color: #fff !important;
+    }
+
+    strong {
+      animation:glitch 3s steps(50) infinite;
+    }
+  }
+
+  span {
+    color: $light-blue;
+    font-size: rem-calc(14);
+    font-family: $ff-sans;
+    display: block;
+    position: relative;
+    z-index: 10;
+    top: 14px;
+
+    a {
+      color: $light-blue;
+      cursor: help;
+      text-decoration: none;
+    }
+  }
+
+  .subtitle {
+    color: #fff;
+    font-size: rem-calc(10);
+    top: -2px;
+    left: -15px;
+    letter-spacing: 2px;
+    position: relative;
+  }
+}
+
+
+.btn-toc {
+  background-color: $dark-blue;
+  border-radius: 20px;
+  border: 1px solid $red;
+  text-transform: uppercase;
+  padding: 3px 15px;
+  display: inline-block;
+  font-family: $ff-sans;
+  font-size: rem-calc(11);
+  letter-spacing: 0.05em;
+  outline:0;
+  font-weight: 900;
+  top: 30px;
+  left: 25px;
+  color: $red;
+  z-index: 99999;
+  transition: .5s;
+  margin: 0 auto;
+  display: block;
+
+  @include mq(500) {
+    position: absolute;
+  }
+
+  &:hover,
+  &.open {
+    background-color: $red;
+    color: $white;
+  }
+}
+
+.social-media-links {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+
+  a:hover img {
+    opacity: .5;
+  }
+
+  img {
+    opacity: .2;
+  }
+
+  a {
+    display: block;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .icon-twitter img {
+    height: 17px;
+    top: 5px;
+    position: relative;
+  }
+
+  .icon-fb img {
+    height: 25px;
+  }
+
+}
