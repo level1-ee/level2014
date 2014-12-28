@@ -879,7 +879,7 @@ html, body {
     font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 900;
     line-height: 2.5; }
-    .slide--goty .tabs__nav li a {
+    .slide--goty .tabs__nav li > a {
       top: 20px;
       position: relative;
       z-index: 10;
@@ -896,27 +896,27 @@ html, body {
       font-size: 0.75rem;
       line-height: 1; }
       @media screen and (min-width: 34.375em) {
-        .slide--goty .tabs__nav li a {
+        .slide--goty .tabs__nav li > a {
           background-color: #19222E;
           line-height: 2.5; } }
       @media screen and (min-width: 37.5em) {
-        .slide--goty .tabs__nav li a {
+        .slide--goty .tabs__nav li > a {
           border: 1px solid #2b3a4f;
           font-size: 0.875rem; } }
-      .slide--goty .tabs__nav li a.current, .slide--goty .tabs__nav li a:hover {
+      .slide--goty .tabs__nav li > a.current, .slide--goty .tabs__nav li > a:hover {
         color: #0D64FF;
         -webkit-transition: 0.5s;
                 transition: 0.5s; }
         @media screen and (min-width: 34.375em) {
-          .slide--goty .tabs__nav li a.current, .slide--goty .tabs__nav li a:hover {
+          .slide--goty .tabs__nav li > a.current, .slide--goty .tabs__nav li > a:hover {
             color: #f4f4f4;
             border: 1px solid #0d64ff;
             background-color: #0D64FF; } }
-      .slide--goty .tabs__nav li a span {
+      .slide--goty .tabs__nav li > a span {
         font-weight: 900;
         display: block; }
         @media screen and (min-width: 34.375em) {
-          .slide--goty .tabs__nav li a span {
+          .slide--goty .tabs__nav li > a span {
             display: inline; } }
     .slide--goty .tabs__nav li:last-child:after {
       content: ''; }
@@ -949,6 +949,12 @@ html, body {
     @media screen and (min-width: 43.75em) {
       .slide--goty .tabs__tabs__tab p {
         font-size: 1.1875rem; } }
+  .slide--goty .tabs__tabs__tab a {
+    text-decoration: none;
+    border-bottom: 1px solid #FF2842;
+    color: #fff; }
+    .slide--goty .tabs__tabs__tab a:hover {
+      background-color: #FF2842; }
   .slide--goty .tabs__tabs__tab p.goty-subtitle {
     text-align: center;
     position: relative;
